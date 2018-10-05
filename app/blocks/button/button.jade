@@ -1,0 +1,12 @@
+mixin button(data)
+	- var data = data || {}
+	+b(data.href ? 'a' : 'button').button&attributes(attributes)(
+		href= data.href
+		disabled= data.disabled
+		class= data.active ? '_state_active' : null
+		class= data.theme ? '_theme_' + data.theme : null
+		class= 'js-button'
+		type= data.href ? false : (data.type || 'button')
+	)
+		+e('span').inner
+			block

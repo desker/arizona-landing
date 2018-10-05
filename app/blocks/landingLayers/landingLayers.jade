@@ -1,0 +1,21 @@
+include ../icon/icon
+include ../title/title
+include ../subtitle/subtitle
+
+mixin landingLayers(items)
+	- var items = items || []
+	+b.landingLayers&attributes(attributes)
+		+e.header
+			+title Из чего состоит продающий сайт
+			+subtitle Эффективность сайта отпределяется проработкой каждого модуля
+		+e.content
+			+e.nav
+				each item, i in items
+					+e('label').nav-label
+						+e('input').nav-radio(type='radio' name='nav' value=item.name checked=i===0)
+						+e.nav-item= item.name
+						+e.nav-content
+							+e.title= item.title
+							+e.desc= item.desc
+						+e.nav-icon(style=`margin-left: ${140 * i}px` class=`icon-${i + 1}`)
+							+icon(item.icon)

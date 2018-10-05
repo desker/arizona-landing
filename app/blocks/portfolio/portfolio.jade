@@ -1,0 +1,21 @@
+include ../button/button
+include ../title/title
+include ../subtitle/subtitle
+
+mixin portfolio(items)
+	- var items = items || []
+	+b.portfolio&attributes(attributes)
+		+title Наши работы
+		+subtitle Только эффективно работающие решения UX/ UI
+		+e.carousel.js-portfolio-carousel
+			each item in items
+				+e.item
+					+e.content
+						+e.preview
+							+e('img').image(src=`/images/works/${item.image}`)
+						+e.name= item.name
+						+e.desc= item.desc
+						+e.task= item.task
+		+e.button
+			+button()
+				| Запросить портфолио
