@@ -40,7 +40,7 @@
 		<meta name="msapplication-square150x150logo" content="/mstile-medium.png">
 		<meta name="msapplication-wide310x150logo" content="/mstile-wide.png">
 		<meta name="msapplication-square310x310logo" content="/mstile-large.png">
-		<title>CSSSR Project Template</title>
+		<title>Digital Studio Arizona</title>
 		<meta name="description" content="">
 		<meta name="keywords" content="">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400i,500i,600,700&amp;amp;subset=cyrillic,cyrillic-ext,latin-ext"
@@ -56,16 +56,16 @@
 						<div class="header__logo">Лого</div>
 						<ul class="header__nav">
 							<li class="header__item">
-								<a href="#portfolio" class="header__link">Портфолио</a>
+								<a href="#portfolio" class="header__link js-header-nav">Портфолио</a>
 							</li>
 							<li class="header__item">
-								<a href="#about-us" class="header__link">Как мы работаем</a>
+								<a href="#about-us" class="header__link js-header-nav">Как мы работаем</a>
 							</li>
 							<li class="header__item">
-								<a href="#team" class="header__link">Команда</a>
+								<a href="#team" class="header__link js-header-nav">Команда</a>
 							</li>
 						</ul>
-						<div class="header__phone">8(495)888-55-33</div>
+						<a href="tel:+74958885533" class="header__phone">8(495)888-55-33</a>
 					</div>
 				</div>
 			</div>
@@ -93,7 +93,7 @@
 						и масштабировать бизнес с помощью технологии мультилендинга.</div>
 				</div>
 			</div>
-			<div class="portfolio">
+			<div id="portfolio" class="portfolio">
 				<div class="title">Наши работы</div>
 				<div class="subtitle">Только эффективно работающие решения UX/ UI</div>
 				<div class="portfolio__carousel js-portfolio-carousel">
@@ -169,9 +169,9 @@
 					</div>
 				</div>
 				<div class="portfolio__button">
-					<button type="button" class="button js-button">
+					<a href="#contact-form" class="button js-button js-show-modal">
 						<span class="button__inner">Запросить портфолио</span>
-					</button>
+					</a>
 				</div>
 			</div>
 			<div class="landingLayers">
@@ -182,60 +182,452 @@
 				<div class="landingLayers__content">
 					<div class="landingLayers__nav">
 						<label class="landingLayers__nav-label">
-							<input type="radio" name="nav" value="1 Слой" checked="checked" class="landingLayers__nav-radio" />
+							<input type="radio" name="nav" value="1" checked="checked" class="landingLayers__nav-radio" />
 							<span class="landingLayers__nav-item">1 Слой</span>
 							<span class="landingLayers__nav-content">
 								<span class="landingLayers__title">1. Отрицание</span>
 								<span class="landingLayers__desc">Смысловой блок - это цифры и факты о вашем бизнесе</span>
 							</span>
-							<span style="margin-left: 0px" class="landingLayers__nav-icon icon-1">
+							<span data-icon-checked="1" class="landingLayers__nav-icon icon-1 js-layer-icon">
 								<svg><use xlink:href="assets/images/icon.svg#icon_layer1"></use></svg>
 							</span>
 						</label>
 						<label class="landingLayers__nav-label">
-							<input type="radio" name="nav" value="2 Слой" class="landingLayers__nav-radio" />
+							<input type="radio" name="nav" value="2" class="landingLayers__nav-radio" />
 							<span class="landingLayers__nav-item">2 Слой</span>
 							<span class="landingLayers__nav-content">
 								<span class="landingLayers__title">2. Злость</span>
 								<span class="landingLayers__desc">Смысловой блок - это цифры и факты о вашем бизнесе</span>
 							</span>
-							<span style="margin-left: 140px" class="landingLayers__nav-icon icon-2">
+							<span data-icon-checked="1" class="landingLayers__nav-icon icon-2 js-layer-icon">
 								<svg><use xlink:href="assets/images/icon.svg#icon_layer2"></use></svg>
 							</span>
 						</label>
 						<label class="landingLayers__nav-label">
-							<input type="radio" name="nav" value="3 Слой" class="landingLayers__nav-radio" />
+							<input type="radio" name="nav" value="3" class="landingLayers__nav-radio" />
 							<span class="landingLayers__nav-item">3 Слой</span>
 							<span class="landingLayers__nav-content">
 								<span class="landingLayers__title">3. Торг</span>
 								<span class="landingLayers__desc">Смысловой блок - это цифры и факты о вашем бизнесе</span>
 							</span>
-							<span style="margin-left: 280px" class="landingLayers__nav-icon icon-3">
+							<span data-icon-checked="1" class="landingLayers__nav-icon icon-3 js-layer-icon">
 								<svg><use xlink:href="assets/images/icon.svg#icon_layer3"></use></svg>
 							</span>
 						</label>
 						<label class="landingLayers__nav-label">
-							<input type="radio" name="nav" value="4 Слой" class="landingLayers__nav-radio" />
+							<input type="radio" name="nav" value="4" class="landingLayers__nav-radio" />
 							<span class="landingLayers__nav-item">4 Слой</span>
 							<span class="landingLayers__nav-content">
 								<span class="landingLayers__title">4. Гнев</span>
 								<span class="landingLayers__desc">Смысловой блок - это цифры и факты о вашем бизнесе</span>
 							</span>
-							<span style="margin-left: 420px" class="landingLayers__nav-icon icon-4">
+							<span data-icon-checked="1" class="landingLayers__nav-icon icon-4 js-layer-icon">
 								<svg><use xlink:href="assets/images/icon.svg#icon_layer4"></use></svg>
 							</span>
 						</label>
 						<label class="landingLayers__nav-label">
-							<input type="radio" name="nav" value="5 Слой" class="landingLayers__nav-radio" />
+							<input type="radio" name="nav" value="5" class="landingLayers__nav-radio" />
 							<span class="landingLayers__nav-item">5 Слой</span>
 							<span class="landingLayers__nav-content">
 								<span class="landingLayers__title">5. ЗАХВАТ МИРА!!1</span>
 								<span class="landingLayers__desc">Смысловой блок - это цифры и факты о вашем бизнесе</span>
 							</span>
-							<span style="margin-left: 560px" class="landingLayers__nav-icon icon-5">
+							<span data-icon-checked="1" class="landingLayers__nav-icon icon-5 js-layer-icon">
 								<svg><use xlink:href="assets/images/icon.svg#icon_layer5"></use></svg>
 							</span>
 						</label>
+					</div>
+				</div>
+			</div>
+			<div class="searchQueries">
+				<div class="title title_light">Технология мультилендинга</div>
+				<div class="subtitle subtitle_light">Ваш сайт может подстраиваться под ключевые запросы</div>
+				<div class="searchQueries__blocks">
+					<div class="searchQueries__block">Каждый клиент найдет то, что искал.</div>
+					<div class="searchQueries__block">Охват целевой аудитории 360 градусов за счет адаптивного семантического ядра.</div>
+					<div class="searchQueries__block">Адаптивные настраиваемые акции с интервалом действия в 24 часа.</div>
+					<div class="searchQueries__block">Минимальная стоимость контакта с клинтом за счет тонкой настройки рекламной кампании.</div>
+					<div class="searchQueries__block">Технология позволяет снизить количество отказов до 0-2% и увеличить конверсию в 2-3 раза.</div>
+				</div>
+				<div class="searchQueries__query">
+					<div class="searchQueries__query-header">
+						<div class="subtitle subtitle_light subtitle_left subtitle_inline pulse">Выберите запрос:</div>
+					</div>
+					<select name="query" class="searchQueries__select js-select-query">
+						<option value="query0" class="searchQueries__option">купить умные часы</option>
+						<option value="query1" class="searchQueries__option">купить умные часы в Москве</option>
+						<option value="query2" class="searchQueries__option">купить умные часы в СПБ</option>
+						<option value="query3" class="searchQueries__option">купить умные часы с бесплатной доставкой</option>
+					</select>
+					<div class="searchQueries__images">
+						<div id="query0" class="searchQueries__image-outer searchQueries__image-outer_selected js-query-image">
+							<div class="searchQueries__image-inner">
+								<img src="images/queries/query1.jpg" class="searchQueries__image" alt="" role="presentation" />
+							</div>
+						</div>
+						<div id="query1" class="searchQueries__image-outer js-query-image">
+							<div class="searchQueries__image-inner">
+								<img src="images/queries/query2.jpg" class="searchQueries__image" alt="" role="presentation" />
+							</div>
+						</div>
+						<div id="query2" class="searchQueries__image-outer js-query-image">
+							<div class="searchQueries__image-inner">
+								<img src="images/queries/query3.jpg" class="searchQueries__image" alt="" role="presentation" />
+							</div>
+						</div>
+						<div id="query3" class="searchQueries__image-outer js-query-image">
+							<div class="searchQueries__image-inner">
+								<img src="images/queries/query4.jpg" class="searchQueries__image" alt="" role="presentation" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="searchQueries__button">
+					<a href="#contact-form" class="button js-button js-show-modal">
+						<span class="button__inner">Запросить портфолио</span>
+					</a>
+				</div>
+			</div>
+			<div class="adaptive">
+				<div class="title">Адаптивный дизайн</div>
+				<div class="subtitle">Наши сайты работают на любых устройствах</div>
+				<div class="adaptive__devices">
+					<div class="adaptive__header">User Interface
+						<br/>User Experience</div>
+					<div class="adaptive__text">
+						<p>Мы разрабатываем и тестируем интерфейсы для планшетов и мобильных утройств.</p>
+						<p>Именно благодаря детальной проработке мы достигаем высокой конверсии сайта.</p>
+					</div>
+					<div class="adaptive__select">
+						<label class="adaptive__device">
+							<input name="device" type="radio" value="tablet" checked="checked" class="adaptive__radio" />
+							<span class="adaptive__icon adaptive__icon_tablet">
+								<svg><use xlink:href="assets/images/icon.svg#icon_tablet"></use></svg>
+							</span>
+							<span class="adaptive__preview adaptive__preview_tablet">
+								<img src="images/preview_ipad.png" class="adaptive__preview-image" alt="" role="presentation" />
+							</span>
+						</label>
+						<label class="adaptive__device">
+							<input name="device" type="radio" value="phone" class="adaptive__radio" />
+							<span class="adaptive__icon adaptive__icon_phone">
+								<svg><use xlink:href="assets/images/icon.svg#icon_phone"></use></svg>
+							</span>
+							<span class="adaptive__preview adaptive__preview_phone">
+								<img src="images/preview_iphone.png" class="adaptive__preview-image" alt="" role="presentation" />
+							</span>
+						</label>
+						<label class="adaptive__device">
+							<input name="device" type="radio" value="notebook" class="adaptive__radio" />
+							<span class="adaptive__icon adaptive__icon_notebook">
+								<svg><use xlink:href="assets/images/icon.svg#icon_notebook"></use></svg>
+							</span>
+							<span class="adaptive__preview adaptive__preview_notebook">
+								<img src="images/preview_macbook.png" class="adaptive__preview-image" alt="" role="presentation" />
+							</span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div id="about-us" class="workStages">
+				<div class="title title_light">Этапы работы</div>
+				<div class="subtitle subtitle_light">Все продумано до мелочей</div>
+				<div class="workStages__scale">
+					<div class="workStages__stage workStages__stage_odd visible">
+						<div style="color: #FF1100;" class="workStages__num">Шаг 1</div>
+						<div style="background-color: #FF1100;" class="workStages__divider"></div>
+						<div class="workStages__text">Проводим с вами интервью, заполняем бриф</div>
+					</div>
+					<div class="workStages__stage workStages__stage_even visible">
+						<div style="color: #FF1900;" class="workStages__num">Шаг 2</div>
+						<div style="background-color: #FF1900;" class="workStages__divider"></div>
+						<div class="workStages__text">Прописываем портрет своей целевой аудитории, выделяем 3 ключевых сегмента</div>
+					</div>
+					<div class="workStages__stage workStages__stage_odd visible">
+						<div style="color: #FF2200;" class="workStages__num">Шаг 3</div>
+						<div style="background-color: #FF2200;" class="workStages__divider"></div>
+						<div class="workStages__text">Выделяем 30 основных смыслов</div>
+					</div>
+					<div class="workStages__stage workStages__stage_even visible">
+						<div style="color: #FF2B00;" class="workStages__num">Шаг 4</div>
+						<div style="background-color: #FF2B00;" class="workStages__divider"></div>
+						<div class="workStages__text">Взвешиваем смыслы, выделяем 10 ключевых смыслов и 3 основных</div>
+					</div>
+					<div class="workStages__stage workStages__stage_odd">
+						<div style="color: #FF3400;" class="workStages__num">Шаг 5</div>
+						<div style="background-color: #FF3400;" class="workStages__divider"></div>
+						<div class="workStages__text">Формулируем: • Предложение; • Дескриптор; • Следующий шаг</div>
+					</div>
+					<div class="workStages__stage workStages__stage_even">
+						<div style="color: #FF4000;" class="workStages__num">Шаг 6</div>
+						<div style="background-color: #FF4000;" class="workStages__divider"></div>
+						<div class="workStages__text">Распределяем смыслы и формы по экранам</div>
+					</div>
+					<div class="workStages__stage workStages__stage_odd">
+						<div style="color: #FF4900;" class="workStages__num">Шаг 7</div>
+						<div style="background-color: #FF4900;" class="workStages__divider"></div>
+						<div class="workStages__text">Создаем протатип и на основе существующих смыслов наполняем экраны • Заголовками; • Фотографиями; • Текстами; • Кнопками</div>
+					</div>
+					<div class="workStages__stage workStages__stage_even">
+						<div style="color: #FF5700;" class="workStages__num">Шаг 8</div>
+						<div style="background-color: #FF5700;" class="workStages__divider"></div>
+						<div class="workStages__text">Проверяем текст на грамотность (показываем корректору)</div>
+					</div>
+					<div class="workStages__stage workStages__stage_odd">
+						<div style="color: #FF6000;" class="workStages__num">Шаг 9</div>
+						<div style="background-color: #FF6000;" class="workStages__divider"></div>
+						<div class="workStages__text">Передаем дизайнеру готовый протатип + готовый бриф с самой важной информацией по целевой аудитории, продукту, компании.
+							Прикладываем все необходимые материалы: • Фотографии; • Логотипы; • Презентации • Видео; • Образцы и т.д.</div>
+					</div>
+					<div class="workStages__stage workStages__stage_even">
+						<div style="color: #FF7400;" class="workStages__num">Шаг 10</div>
+						<div style="background-color: #FF7400;" class="workStages__divider"></div>
+						<div class="workStages__text">Передаем дизайнеру гайдлайн (если есть) и показываем референцы</div>
+					</div>
+					<div class="workStages__stage workStages__stage_odd">
+						<div style="color: #FF7D00;" class="workStages__num">Шаг 11</div>
+						<div style="background-color: #FF7D00;" class="workStages__divider"></div>
+						<div class="workStages__text">Принимаем дизайн- макет, проверяем на целостность смыслов</div>
+					</div>
+					<div class="workStages__stage workStages__stage_even">
+						<div style="color: #FF8600;" class="workStages__num">Шаг 12</div>
+						<div style="background-color: #FF8600;" class="workStages__divider"></div>
+						<div class="workStages__text">Минимализируем количество полей в формах</div>
+					</div>
+					<div class="workStages__stage workStages__stage_odd">
+						<div style="color: #FF8C00;" class="workStages__num">Шаг 13</div>
+						<div style="background-color: #FF8C00;" class="workStages__divider"></div>
+						<div class="workStages__text">Распределяем формы захвата по экранам согласно их «весу» и контексту</div>
+					</div>
+					<div class="workStages__stage workStages__stage_even">
+						<div style="color: #FF9500;" class="workStages__num">Шаг 14</div>
+						<div style="background-color: #FF9500;" class="workStages__divider"></div>
+						<div class="workStages__text">Выносим в отдельные экраны и раскрываем наиболее важные формы</div>
+					</div>
+					<div class="workStages__stage workStages__stage_odd">
+						<div style="color: #FF9D00;" class="workStages__num">Шаг 15</div>
+						<div style="background-color: #FF9D00;" class="workStages__divider"></div>
+						<div class="workStages__text">Передаем верстальщику исходники дизайн- макета и все дополнительные материалы</div>
+					</div>
+					<div class="workStages__stage workStages__stage_even">
+						<div style="color: #FFA700;" class="workStages__num">Шаг 16</div>
+						<div style="background-color: #FFA700;" class="workStages__divider"></div>
+						<div class="workStages__text">После верстки проверяем все элементы сайта на соответствие дизайн- макету и корректность их работы в разных браузерах
+							на разных устройствах</div>
+					</div>
+					<div class="workStages__stage workStages__stage_odd">
+						<div style="color: #FFB100;" class="workStages__num">Шаг 17</div>
+						<div style="background-color: #FFB100;" class="workStages__divider"></div>
+						<div class="workStages__text">Проверяем сайт на скорость загрузки</div>
+					</div>
+					<div class="workStages__stage workStages__stage_even">
+						<div style="color: #FFB900;" class="workStages__num">Шаг 18</div>
+						<div style="background-color: #FFB900;" class="workStages__divider"></div>
+						<div class="workStages__text">Подключаем сайт к системе управления контентом (если необходимо)</div>
+					</div>
+					<div class="workStages__stage workStages__stage_odd">
+						<div style="color: #FFC000;" class="workStages__num">Шаг 19</div>
+						<div style="background-color: #FFC000;" class="workStages__divider"></div>
+						<div class="workStages__text">Подключаем все необходимые сервисы, цели, интегрируем с CRM</div>
+					</div>
+					<div class="workStages__stage workStages__stage_even">
+						<div style="color: #FFCB00;" class="workStages__num">Шаг 20</div>
+						<div style="background-color: #FFCB00;" class="workStages__divider"></div>
+						<div class="workStages__text">Подключаем YandexМетрика и GoogleAnalytics</div>
+					</div>
+					<div class="workStages__stage workStages__stage_odd">
+						<div style="color: #FFD200;" class="workStages__num">Шаг 21</div>
+						<div style="background-color: #FFD200;" class="workStages__divider"></div>
+						<div class="workStages__text">Проверяем корректность отображения целей</div>
+					</div>
+					<div class="workStages__stage workStages__stage_even">
+						<div style="color: #FFD800;" class="workStages__num">Шаг 22</div>
+						<div style="background-color: #FFD800;" class="workStages__divider"></div>
+						<div class="workStages__text">Запускаем экстперимент в GA между короткой и длинной версией сайта</div>
+					</div>
+					<div class="workStages__stage workStages__stage_odd">
+						<div style="color: #FFE500;" class="workStages__num">Шаг 23</div>
+						<div style="background-color: #FFE500;" class="workStages__divider"></div>
+						<div class="workStages__text">Формулируем и тестируем другие гипотезы, проводим А/Б тесты</div>
+					</div>
+				</div>
+				<div class="workStages__button">
+					<a href="#contact-form" class="button js-button js-show-modal">
+						<span class="button__inner">Запросить портфолио</span>
+					</a>
+				</div>
+			</div>
+			<div id="team" class="team">
+				<div class="title">Наша команда</div>
+				<div class="subtitle">Мы любим свое дело, каждый по- своему!</div>
+				<div class="team__persons js-team-carousel">
+					<div class="team__person js-team-person">
+						<label class="team__person-inner">
+							<input type="radio" name="person" value="0" class="team__person-input" />
+							<span class="team__image"></span>
+							<span class="team__desc">
+								<span class="team__name">Бильбо Бэггинс</span>
+								<span class="team__position">Копирайтер</span>
+							</span>
+						</label>
+					</div>
+					<div class="team__person js-team-person">
+						<label class="team__person-inner">
+							<input type="radio" name="person" value="1" class="team__person-input" />
+							<span class="team__image"></span>
+							<span class="team__desc">
+								<span class="team__name">Фродо Бэггинс</span>
+								<span class="team__position">Логист</span>
+							</span>
+						</label>
+					</div>
+					<div class="team__person js-team-person">
+						<label class="team__person-inner">
+							<input type="radio" name="person" value="2" class="team__person-input" />
+							<span class="team__image"></span>
+							<span class="team__desc">
+								<span class="team__name">Сэмуайз Гэмджи</span>
+								<span class="team__position">Штурман</span>
+							</span>
+						</label>
+					</div>
+					<div class="team__person js-team-person">
+						<label class="team__person-inner">
+							<input type="radio" name="person" value="3" checked="checked" class="team__person-input" />
+							<span class="team__image">
+								<img src="images/team/team1.jpg" class="team__photo" alt="" role="presentation" />
+							</span>
+							<span class="team__desc">
+								<span class="team__name">Кирилл Кураченков</span>
+								<span class="team__position">Творческий директор</span>
+							</span>
+						</label>
+					</div>
+					<div class="team__person js-team-person">
+						<label class="team__person-inner">
+							<input type="radio" name="person" value="4" class="team__person-input" />
+							<span class="team__image">
+								<img src="images/team/team2.jpg" class="team__photo" alt="" role="presentation" />
+							</span>
+							<span class="team__desc">
+								<span class="team__name">Гэндальф Белый</span>
+								<span class="team__position">Штатный маг</span>
+							</span>
+						</label>
+					</div>
+					<div class="team__person js-team-person">
+						<label class="team__person-inner">
+							<input type="radio" name="person" value="5" class="team__person-input" />
+							<span class="team__image"></span>
+							<span class="team__desc">
+								<span class="team__name">Арагорн Элессар</span>
+								<span class="team__position">Генеральный директор</span>
+							</span>
+						</label>
+					</div>
+					<div class="team__person js-team-person">
+						<label class="team__person-inner">
+							<input type="radio" name="person" value="6" class="team__person-input" />
+							<span class="team__image"></span>
+							<span class="team__desc">
+								<span class="team__name">Голлум</span>
+								<span class="team__position">Бухгалтер</span>
+							</span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="present">
+				<div class="title">Спасибо, что долистали до конца!</div>
+				<div class="subtitle">В качестве подарка получите скидку на наши услуги в размере 10%</div>
+				<div class="present__button">
+					<button type="button" class="button button_theme_blue js-button">
+						<span class="button__inner">Получить скидку</span>
+					</button>
+				</div>
+			</div>
+			<div class="partners">
+				<div class="partners__partner">
+					<img src="images/partner1.png" class="partners__image" alt="" role="presentation" />
+				</div>
+				<div class="partners__partner">
+					<img src="images/partner2.png" class="partners__image" alt="" role="presentation" />
+				</div>
+				<div class="partners__partner">
+					<img src="images/partner3.png" class="partners__image" alt="" role="presentation" />
+				</div>
+				<div class="partners__partner">
+					<img src="images/partner4.png" class="partners__image" alt="" role="presentation" />
+				</div>
+				<div class="partners__partner">
+					<img src="images/partner5.png" class="partners__image" alt="" role="presentation" />
+				</div>
+				<div class="partners__partner">
+					<img src="images/partner6.png" class="partners__image" alt="" role="presentation" />
+				</div>
+			</div>
+			<div class="footer">
+				<div class="footer__container">
+					<div class="footer__nav-block">
+						<div class="footer__header">Скачать</div>
+						<a href="#" class="footer__link">Запросить бриф</a>
+						<a href="#" class="footer__link">Запросить пример ТЗ</a>
+						<a href="#" class="footer__link">Запросить консультацию</a>
+					</div>
+					<div class="footer__nav-block">
+						<div class="footer__header">Нужна помощь?</div>
+						<a href="#" class="footer__link">Горячая линие</a>
+						<a href="#" class="footer__link">E- mail</a>
+						<a href="#" class="footer__link">Вопросы и ответы</a>
+					</div>
+					<div class="footer__nav-block">
+						<div class="footer__header">Контакты</div>
+						<a href="tel:+74957778899" class="footer__link">
+							<svg class="footer__icon"><use xlink:href="assets/images/icon.svg#icon_contact_phone"></use></svg>8(495) 777-88-99</a>
+						<a href="tel:+79067754499"
+							class="footer__link">
+							<svg class="footer__icon"><use xlink:href="assets/images/icon.svg#icon_contact_whatsapp"></use></svg>8(906) 775-44-99</a>
+						<a href="skype:arizonadigital"
+							class="footer__link">
+							<svg class="footer__icon"><use xlink:href="assets/images/icon.svg#icon_contact_skype"></use></svg>arizonadigital</a>
+					</div>
+					<div class="footer__nav-block">
+						<button type="button" class="button button_size_auto js-button">
+							<span class="button__inner">Задайте нам вопрос</span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="modal js-modal" id="contact-form">
+				<div class="modal__overlay js-hide-modal"></div>
+				<div class="modal__content">
+					<div class="contactForm">
+						<form method="post" action="/" class="contactForm__form js-form">
+							<div class="contactForm__main">
+								<div class="title">Оставьте свои контактные данные</div>
+								<div class="subtitle">И наш менеджер свяжется с Вами в ближайшее время</div>
+								<div class="contactForm__fields">
+									<label class="input">
+										<input class="input__field" name="fullname" type="text" required="required" />
+										<span class="input__label">Имя</span>
+									</label>
+									<label class="input">
+										<input class="input__field" name="phone" type="text" data-mask="+7 (###) ### - ## - ##" required="required" />
+										<span class="input__label">Телефон</span>
+									</label>
+									<div class="contactForm__submit">
+										<button type="submit" disabled="disabled" class="contactForm__button">Отправить</button>
+									</div>
+								</div>
+							</div>
+							<div class="contactForm__message">
+								<div class="title">Спасибо!</div>
+								<div class="subtitle">Наш менеджер свяжется с Вами в ближайшее время</div>
+								<div class="contactForm__close">
+									<button type="button" class="contactForm__button js-hide-modal">На главную</button>
+								</div>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
