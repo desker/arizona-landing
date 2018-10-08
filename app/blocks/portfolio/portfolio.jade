@@ -4,7 +4,7 @@ include ../subtitle/subtitle
 
 mixin portfolio(items)
 	- var items = items || []
-	+b.portfolio&attributes(attributes)
+	+b.portfolio#portfolio&attributes(attributes)
 		+title Наши работы
 		+subtitle Только эффективно работающие решения UX/ UI
 		+e.carousel.js-portfolio-carousel
@@ -17,5 +17,5 @@ mixin portfolio(items)
 						+e.desc= item.desc
 						+e.task= item.task
 		+e.button
-			+button()
+			+button({ href: '#contact-form' }).js-show-modal
 				| Запросить портфолио

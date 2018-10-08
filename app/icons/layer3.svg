@@ -1,45 +1,15 @@
-<svg width="400" height="359" viewBox="0 0 400 359" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_d)">
-<rect x="19" y="11.6748" width="361.961" height="320.09" fill="white" fill-opacity="0.49"/>
-</g>
-<rect x="19" y="21.0066" width="361.961" height="320.09" fill="white"/>
-<rect opacity="0.46" x="19" y="16.3408" width="361.961" height="320.09" fill="white"/>
-<g filter="url(#filter1_ii)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M94.1241 31.5061V223.542H305.837V31.5061H94.1241Z" fill="white"/>
-</g>
-<path d="M305.612 223.317H94.3498V31.7318H305.612V223.317Z" stroke="#979797" stroke-width="0.451364"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M180.93 180.616C180.182 180.616 179.576 181.223 179.576 181.971V187.384C179.576 188.132 180.182 188.738 180.93 188.738H219.76C220.508 188.738 221.114 188.132 221.114 187.384V181.971C221.114 181.223 220.508 180.616 219.76 180.616H180.93Z" fill="#FC0000"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M147.837 55.7952C147.09 55.7952 146.483 56.4014 146.483 57.1493V65.7217C146.483 66.4695 147.09 67.0758 147.837 67.0758H258.005C258.753 67.0758 259.359 66.4695 259.359 65.7217V57.1493C259.359 56.4014 258.753 55.7952 258.005 55.7952H147.837Z" fill="#C3C8CD"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M131.143 77.8071C130.395 77.8071 129.789 78.4134 129.789 79.1612V81.8677C129.789 82.6156 130.395 83.2218 131.143 83.2218H268.401C269.149 83.2218 269.755 82.6156 269.755 81.8677V79.1612C269.755 78.4134 269.149 77.8071 268.401 77.8071H131.143Z" fill="#C3C8CD"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M131.143 86.8318C130.395 86.8318 129.789 87.438 129.789 88.1859V90.8924C129.789 91.6402 130.395 92.2465 131.143 92.2465H268.401C269.149 92.2465 269.755 91.6402 269.755 90.8924V88.1859C269.755 87.438 269.149 86.8318 268.401 86.8318H131.143Z" fill="#C3C8CD"/>
-<rect x="170.007" y="130.94" width="58.6954" height="9.92693" fill="#F7F7F7"/>
-<rect x="170.007" y="144.928" width="58.6954" height="9.92693" fill="#F7F7F7"/>
-<rect x="182.198" y="159.367" width="46.5048" height="5.41469" fill="#F7F7F7"/>
-<rect x="182.198" y="166.135" width="46.5048" height="5.41469" fill="#F7F7F7"/>
-<rect x="170.007" y="159.367" width="8.57856" height="8.57326" fill="#F7F7F7"/>
-<defs>
-<filter id="filter0_d" x="0.0266914" y="0.29082" width="399.908" height="358.036" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-<feOffset dy="7.58932"/>
-<feGaussianBlur stdDeviation="9.48665"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-</filter>
-<filter id="filter1_ii" x="94.1241" y="31.5061" width="211.713" height="192.036" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="1.80545"/>
-<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0.768627 0 0 0 0 0.78451 0 0 0 0 0.803922 0 0 0 1 0"/>
-<feBlend mode="normal" in2="shape" result="effect1_innerShadow"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="-1.80545"/>
-<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0.764706 0 0 0 0 0.784314 0 0 0 0 0.803922 0 0 0 1 0"/>
-<feBlend mode="normal" in2="effect1_innerShadow" result="effect2_innerShadow"/>
-</filter>
-</defs>
+<svg width="362" height="330" viewBox="0 0 362 330" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.0387573" y="0.449951" width="361.961" height="320.09" fill="white" fill-opacity="0.49"/>
+<rect x="0.0387726" y="9.78174" width="361.961" height="320.09" fill="white"/>
+<rect opacity="0.46" x="0.0387726" y="5.11597" width="361.961" height="320.09" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M75.1629 212.317V20.2812H286.876V212.317H75.1629ZM286.425 211.866V20.7326H75.6143V211.866H286.425Z" fill="#979797"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M161.969 169.392C161.221 169.392 160.615 169.998 160.615 170.746V176.16C160.615 176.907 161.221 177.514 161.969 177.514H200.799C201.547 177.514 202.153 176.907 202.153 176.16V170.746C202.153 169.998 201.547 169.392 200.799 169.392H161.969Z" fill="#FC0000"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M128.876 44.5703C128.128 44.5703 127.522 45.1766 127.522 45.9244V54.4968C127.522 55.2447 128.128 55.8509 128.876 55.8509H239.044C239.792 55.8509 240.398 55.2447 240.398 54.4968V45.9244C240.398 45.1766 239.792 44.5703 239.044 44.5703H128.876Z" fill="#C3C8CD"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M112.182 66.5823C111.434 66.5823 110.828 67.1885 110.828 67.9364V70.6429C110.828 71.3907 111.434 71.997 112.182 71.997H249.44C250.188 71.997 250.794 71.3907 250.794 70.6429V67.9364C250.794 67.1885 250.188 66.5823 249.44 66.5823H112.182Z" fill="#C3C8CD"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M112.182 75.6069C111.434 75.6069 110.828 76.2132 110.828 76.961V79.6675C110.828 80.4154 111.434 81.0216 112.182 81.0216H249.44C250.188 81.0216 250.794 80.4154 250.794 79.6675V76.961C250.794 76.2132 250.188 75.6069 249.44 75.6069H112.182Z" fill="#C3C8CD"/>
+<rect x="151.046" y="119.715" width="58.6954" height="9.92693" fill="#F7F7F7"/>
+<rect x="151.046" y="133.703" width="58.6954" height="9.92693" fill="#F7F7F7"/>
+<rect x="163.236" y="148.142" width="46.5048" height="5.41469" fill="#F7F7F7"/>
+<rect x="163.236" y="154.91" width="46.5048" height="5.41469" fill="#F7F7F7"/>
+<rect x="151.046" y="148.142" width="8.57856" height="8.57326" fill="#F7F7F7"/>
 </svg>

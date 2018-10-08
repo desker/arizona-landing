@@ -1,0 +1,21 @@
+include ../title/title
+include ../subtitle/subtitle
+
+mixin team(items)
+	- var items = items || []
+	- items = items.length && items.length % 2 === 0 ? items.concat({}) : items
+	- var itemChecked = (items.length + 1) / 2
+	+b.team#team&attributes(attributes)
+		+title Наша команда
+		+subtitle Мы любим свое дело, каждый по- своему!
+		+e.persons.js-team-carousel
+			each item, i in items
+				+e.person.js-team-person
+					+e('label').person-inner
+						+e('input').person-input(type='radio' name='person' value=`${i}` checked=(i + 1 === itemChecked))
+						+e.image
+							if item.image
+								+e('img').photo(src=`/images/team/${item.image}`)
+						+e.desc
+							+e.name= item.name
+							+e.position= item.position

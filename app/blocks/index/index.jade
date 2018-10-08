@@ -2,6 +2,15 @@ include ../header/header
 include ../intro/intro
 include ../portfolio/portfolio
 include ../landingLayers/landingLayers
+include ../searchQueries/searchQueries
+include ../adaptive/adaptive
+include ../workStages/workStages
+include ../team/team
+include ../present/present
+include ../partners/partners
+include ../footer/footer
+include ../modal/modal
+include ../contactForm/contactForm
 
 mixin index()
 	+b.index&attributes(attributes)
@@ -9,3 +18,12 @@ mixin index()
 		+intro()
 		+portfolio(getData('portfolio'))
 		+landingLayers(getData('landingLayers'))
+		+searchQueries(getData('searchQueries'))
+		+adaptive()
+		+workStages(getData('stages'))
+		+team(getData('team'))
+		+present()
+		+partners()
+		+footer()
+		+modal#contact-form
+			+contactForm

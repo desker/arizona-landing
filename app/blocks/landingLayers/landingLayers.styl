@@ -1,3 +1,18 @@
+iconTransforms($num)
+	&.icon-{$num}
+		margin-left 140px * ($num - 1)
+	
+		+below($tablet)
+			margin-left 0
+			left 50%
+			bottom -120px
+			
+iconTransformsOnChecked($num, $checked)
+	&.icon-{$num}
+		+below($tablet)
+			&[data-icon-checked=\"{$checked}\"]
+				transform translateX(-50% + 50% * ($num - $checked))
+
 .landingLayers
 	display block
 	background-color $c-light-gray
@@ -102,7 +117,12 @@
 		position absolute
 		left -40px
 		bottom -160px
-		transition ease .3s bottom
+		transition ease .3s all
+		box-shadow 0px 7px 19px rgba(0, 0, 0, 0.12)
+		background-color rgba($c-white, .5)
+		
+		+below($tablet)
+			width 250px
 
 		svg
 			width 360px
@@ -112,6 +132,8 @@
 				width 250px
 				height 220px
 				
-		+below($tablet)
-			left 0
-			bottom -120px
+		for num in (1..5)
+			iconTransforms(num)
+			
+			for checked in (1..5)
+				iconTransformsOnChecked(num, checked)

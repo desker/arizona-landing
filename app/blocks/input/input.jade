@@ -1,0 +1,5 @@
+mixin input(data)
+	- var data = data || {}
+	+b('label').input
+		+e('input').field&attributes(attributes)
+		+e.label= data.label

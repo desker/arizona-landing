@@ -1,0 +1,38 @@
+.partners
+	display block
+	height 140px
+	text-align center
+	font-size 0
+	
+	+below($tablet)
+		height auto
+		overflow hidden
+		padding 15px 0
+	
+	&:before
+		display inline-block
+		width 1px
+		height 140px
+		vertical-align middle
+		content ''
+		
+		+below($tablet)
+			display none
+	
+	&__partner
+		display inline-block
+		margin 0 55px
+		vertical-align middle
+		
+		&:first-child
+			margin-left 0
+			
+		&:last-child
+			margin-right 0
+
+		+below($tablet)
+			display block
+			float left
+			width 50%
+			height 40px
+			margin 15px 0

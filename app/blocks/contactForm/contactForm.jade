@@ -1,0 +1,22 @@
+include ../button/button
+include ../title/title
+include ../subtitle/subtitle
+include ../input/input
+
+mixin contactForm()
+	+b.contactForm&attributes(attributes)
+		+e('form').form.js-form(method='post' action='/')
+			+e.main
+				+title Оставьте свои контактные данные
+				+subtitle И наш менеджер свяжется с Вами в ближайшее время
+				+e.fields
+					+input({ label: 'Имя' })(name='fullname' type='text' required)
+					+input({ label: 'Телефон' })(name='phone' type='text' data-mask='+7 (###) ### - ## - ##' required)
+					+e.submit
+						+e('button').button(type='submit' disabled) Отправить
+
+			+e.message
+				+title Спасибо!
+				+subtitle Наш менеджер свяжется с Вами в ближайшее время
+				+e.close
+					+e('button').button.js-hide-modal(type='button') На главную

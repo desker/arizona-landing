@@ -1,0 +1,19 @@
+include ../button/button
+include ../title/title
+include ../subtitle/subtitle
+
+
+mixin workStages(stages)
+	- var stages = stages || []
+	+b.workStages#about-us&attributes(attributes)
+		+title._light Этапы работы
+		+subtitle._light Все продумано до мелочей
+		+e.scale
+			each stage, i in stages
+				+e.stage(class=(i + 1) % 2 === 0 ? '_even' : '_odd' class=i <= 3 ? 'visible' : '')
+					+e.num(style=`color: ${stage.color};`)= `Шаг ${i + 1}`
+					+e.divider(style=`background-color: ${stage.color};`)
+					+e.text= stage.text
+
+		+e.button
+			+button({ href: '#contact-form' }).js-show-modal Запросить портфолио

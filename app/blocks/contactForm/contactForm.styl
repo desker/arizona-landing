@@ -1,0 +1,63 @@
+.contactForm
+	display block
+
+	&__form
+		display block
+		
+		&.submitting
+			pointer-events none
+
+			.contactForm__button
+				opacity .5
+				
+		&.submit-success
+			.contactForm__main
+				opacity 0	
+				
+			.contactForm__message
+				display block
+	
+	&__fields
+		margin-top 60px
+	
+	&__main
+		opacity 1
+		transition ease .2s opacity
+		position relative
+		z-index 5
+		background #fff
+
+	&__submit
+		margin-top 60px
+		text-align center
+		
+	&__button
+		width 204px
+		height 50px
+		background #ED5736
+		color #fff
+		font-weight 500
+		font-size 14px
+		font-family 'Montserrat', sans-serif
+		cursor pointer
+		border-radius 15px
+		border none
+		
+		&:disabled
+			opacity .5
+			cursor auto
+			
+	&__message
+		position absolute
+		z-index 6
+		left 0
+		top 0
+		right 0
+		bottom 0
+		padding-top 150px
+		display none
+		
+	&__close
+		margin-top 125px
+		text-align center
+		

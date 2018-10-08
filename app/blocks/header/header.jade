@@ -13,6 +13,6 @@ mixin header(header)
 				+e('ul').nav
 					each item in nav
 						+e.item
-							+e('a').link(href=`#${item.id}`)
+							+e('a').link.js-header-nav(href=`#${item.id}`)
 								= item.title
-				+e.phone= phone
+				+e('a').phone(href=`tel:+7${phone.replace(/[^0-9]/g, '').substr(1)}`)= phone

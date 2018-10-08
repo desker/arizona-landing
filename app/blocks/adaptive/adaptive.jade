@@ -1,0 +1,35 @@
+include ../title/title
+include ../subtitle/subtitle
+include ../icon/icon
+
+mixin adaptive()
+	+b.adaptive&attributes(attributes)
+		+title Адаптивный дизайн
+		+subtitle Наши сайты работают на любых устройствах
+		+e.devices
+			+e.header
+				| User Interface
+				br
+				| User Experience
+			+e.text
+				p Мы разрабатываем и тестируем интерфейсы для планшетов и мобильных утройств.
+				p Именно благодаря детальной проработке мы достигаем высокой конверсии сайта.
+			+e.select
+				+e('label').device
+					+e('input').radio(name='device' type='radio' value='tablet' checked)
+					+e.icon._tablet
+						+icon('tablet')
+					+e.preview._tablet
+						+e('img').preview-image(src='/images/preview_ipad.png')
+				+e('label').device
+					+e('input').radio(name='device' type='radio' value='phone')
+					+e.icon._phone
+						+icon('phone')
+					+e.preview._phone
+						+e('img').preview-image(src='/images/preview_iphone.png')
+				+e('label').device
+					+e('input').radio(name='device' type='radio' value='notebook')
+					+e.icon._notebook
+						+icon('notebook')
+					+e.preview._notebook
+						+e('img').preview-image(src='/images/preview_macbook.png')

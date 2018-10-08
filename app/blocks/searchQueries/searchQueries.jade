@@ -1,0 +1,31 @@
+include ../button/button
+include ../title/title
+include ../subtitle/subtitle
+
+mixin searchQueries(data)
+	- var blocks = data.blocks || []
+	- var queries = data.queries || []
+	+b.searchQueries&attributes(attributes)
+		+title._light
+			| Технология мультилендинга
+		+subtitle._light
+			| Ваш сайт может подстраиваться под ключевые запросы
+		+e.blocks
+			each block in blocks
+				+e.block= block
+		+e.query
+			+e.query-header
+				+subtitle._light._left._inline.pulse
+					| Выберите запрос:
+			+e('select').select.js-select-query(name='query')
+				each item, i in queries
+					+e('option').option(value=`query${i}`)= item.name
+			+e.images
+				each item, i in queries
+					+e.image-outer(id=`query${i}` class=i === 0 ? '_selected' : '').js-query-image
+						+e.image-inner
+							+e('img').image(src=`/images/queries/${item.image}`)
+
+		+e.button
+			+button({ href: '#contact-form' }).js-show-modal
+				| Запросить портфолио

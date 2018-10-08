@@ -12,10 +12,10 @@ mixin landingLayers(items)
 			+e.nav
 				each item, i in items
 					+e('label').nav-label
-						+e('input').nav-radio(type='radio' name='nav' value=item.name checked=i===0)
+						+e('input').nav-radio(type='radio' name='nav' value=(i + 1) checked=i===0)
 						+e.nav-item= item.name
 						+e.nav-content
 							+e.title= item.title
 							+e.desc= item.desc
-						+e.nav-icon(style=`margin-left: ${140 * i}px` class=`icon-${i + 1}`)
+						+e.nav-icon(class=`icon-${i + 1}` data-icon-checked='1').js-layer-icon
 							+icon(item.icon)

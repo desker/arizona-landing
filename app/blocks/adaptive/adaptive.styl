@@ -1,0 +1,146 @@
+.adaptive
+	display block
+	width 100%
+	overflow hidden
+	padding 75px 0 110px
+	
+	+below($tablet)
+		padding 25px 0 30px
+
+	&__devices
+		position relative
+		width 100%
+		max-width 1100px
+		margin-x auto
+		margin-top 85px
+		
+		+below($tablet)
+			margin-top 40px
+		
+	&__header
+		line-height 32px
+		font-size 24px
+		
+		+below($tablet)
+			width 100%
+			max-width 360px
+			margin-x auto
+			padding 0 20px
+		
+	&__text
+		margin 40px 0 60px
+		width 360px
+		line-height 23px
+		font-size 13px
+		
+		p
+			margin-bottom 6px
+			
+		+below($tablet)
+			width 100%
+			max-width 360px
+			margin-x auto
+			padding 0 20px
+		
+	&__radio
+		display none
+		
+		&:checked
+			& + .adaptive__icon
+				opacity 1
+			
+			& ~ .adaptive__preview
+				opacity 1
+			
+	&__select
+		width 286px
+		text-align justify
+		
+		+below($tablet)
+			margin-x auto
+			padding-bottom 200px
+		
+		&:after
+			display inline-block
+			width 100%
+			height 1px
+			content ''
+			
+	&__device
+		display inline-block
+		vertical-align middle
+		cursor pointer
+			
+	&__icon
+		display inline-block
+		opacity .4
+		transition ease .2s opacity
+		
+		&:hover
+			opacity .7
+		
+		&_tablet
+			svg
+				width 39px
+				height 58px
+				
+		&_phone
+			svg
+				width 20px
+				height 40px
+				
+		&_notebook
+			svg
+				width 91px
+				height 58px
+				
+	&__preview
+		position absolute
+		cursor auto
+		opacity .5
+		transition ease .2s opacity
+		
+		&_tablet
+			right 240px
+			top 10px
+			z-index 9
+			
+			+below($tablet)
+				right auto
+				left 50%
+				top auto
+				bottom 30px
+				margin-left -150px
+				
+				img
+					width 105px
+			
+		&_phone
+			right 200px
+			top 160px
+			z-index 10
+			
+			+below($tablet)
+				right auto
+				left 50%
+				top auto
+				bottom 36px
+				margin-left -40px
+				
+				img
+					width 40px
+		
+		&_notebook
+			right -280px
+			top -45px
+			z-index 8
+			
+			+below($tablet)
+				right auto
+				left 50%
+				top auto
+				bottom 30px
+				margin-left -100px
+				
+				img
+					width 270px

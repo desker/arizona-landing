@@ -1,0 +1,11 @@
+include ../button/button
+include ../title/title
+include ../subtitle/subtitle
+
+mixin present()
+	+b.present&attributes(attributes)
+		+title Спасибо, что долистали до конца!
+		+subtitle В качестве подарка получите скидку на наши услуги в размере 10%
+		+e.button
+			+button({ theme: 'blue' })
+				| Получить скидку

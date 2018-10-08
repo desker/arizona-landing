@@ -1,0 +1,87 @@
+.team
+	display block
+	padding 60px 0 100px
+
+	&__persons
+		margin-top 90px
+		padding-bottom 105px
+		display block
+		text-align center
+		position relative
+		font-size 0
+		
+	&__person
+		display inline-block
+		margin 0 10px
+		
+		.slick-slide &
+			margin 0
+		
+	&__image
+		display block
+		width 78px
+		height 78px
+		border-radius 100%
+		overflow hidden
+		background-color #D8D8D8
+		opacity .3
+		transition ease .2s opacity
+		
+		&:hover
+			opacity .6
+			
+		.with-carousel &
+			width 96px
+			height 96px
+		
+	&__photo
+		width 78px
+		height auto
+		
+		.with-carousel &
+			width 96px
+		
+	&__person-inner
+		display block
+		cursor pointer
+		
+		.with-carousel &
+			position relative
+			width 96px
+			height 200px
+			margin-x auto
+		
+	&__person-input
+		display none
+		
+		&:checked
+			& + .team__image
+				opacity 1
+				
+			& ~ .team__desc
+				opacity 1
+				
+	&__desc
+		position absolute
+		left 0
+		right 0
+		text-align center
+		padding-top 55px
+		opacity 0
+		transition ease .2s opacity
+		
+		.with-carousel &
+			left -100px
+			right -100px
+	
+	&__name
+		display block
+		font-size 22px
+		color $text-gray
+	
+	&__position
+		font-style italic
+		font-weight 300
+		line-height 26px
+		font-size 11px
+		color #F67354

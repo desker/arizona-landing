@@ -1,0 +1,33 @@
+include ../button/button
+include ../icon/icon
+
+mixin footer()
+	+b.footer&attributes(attributes)
+		+e.container
+			+e.nav-block
+				+e.header Скачать
+				+e('a').link(href='#') Запросить бриф
+				+e('a').link(href='#') Запросить пример ТЗ
+				+e('a').link(href='#') Запросить консультацию
+
+			+e.nav-block
+				+e.header Нужна помощь?
+				+e('a').link(href='#') Горячая линие
+				+e('a').link(href='#') E- mail
+				+e('a').link(href='#') Вопросы и ответы
+
+			+e.nav-block
+				+e.header Контакты
+				+e('a').link(href='tel:+74957778899')
+					+icon('contact_phone').icon
+					| 8(495) 777-88-99
+				+e('a').link(href='tel:+79067754499')
+					+icon('contact_whatsapp').icon
+					| 8(906) 775-44-99
+				+e('a').link(href='skype:arizonadigital')
+					+icon('contact_skype').icon
+					| arizonadigital
+
+			+e.nav-block
+				+button({ size: 'auto' })
+					| Задайте нам вопрос
