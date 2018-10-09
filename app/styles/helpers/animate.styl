@@ -2,17 +2,36 @@
   from
     transform scale3d(1, 1, 1)
 
-  10%
+  20%
     transform scale3d(1.1, 1.1, 1.1)
 
-  20%
+  40%
     transform scale3d(1, 1, 1)
 
   to
     transform scale3d(1, 1, 1)
 
+@keyframes flash
+  from
+    opacity 1
+
+  20%
+    opacity .6
+
+  40%
+    opacity 1
+
+  to
+    opacity 1
+
 .pulse
   transform-origin center
   animation-name pulse
-  animation-duration 5s
+  animation-duration 2s
+  animation-iteration-count infinite
+  
+.flash
+  transform-origin center
+  animation-name flash
+  animation-duration 2s
   animation-iteration-count infinite

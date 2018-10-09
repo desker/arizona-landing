@@ -1,0 +1,33 @@
+include ../icon/icon
+include ../title/title
+include ../subtitle/subtitle
+
+mixin route()
+	+b.route&attributes(attributes)
+		+title._light Продуманный маршрут пользователя
+		+subtitle._light
+			| Мы постоянно совершенствуем алгоритмы взаимодействия
+			br
+			| с пользователем
+
+		+e.icon._1
+			+icon('user')
+			+e.icon-text Быстрый
+
+		+e.icon._2
+			+icon('user')
+			+e.icon-text Эмоциональный
+
+		+e.icon._3
+			+icon('user')
+			+e.icon-text Внимательный
+		
+		+e.layers
+			each image, num in ['header', 'adv', 'contact', 'reviews', 'footer']
+				+e.layer(class=`_position_${num} js-user-${num}`)
+					+e('img').image(src=`/images/page/${image}.png`)
+
+		+e.content
+			+e.header Маршрут пользователя
+			+e.text В зависимости от функционала сайта, мы продумываем несколько сценариев взаимодействия ...
+

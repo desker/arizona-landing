@@ -1,7 +1,7 @@
-.workStages
+.work-stages
 	display block
 	padding 60px 0 170px
-	background $text
+	background #2D2D2D
 	
 	+below($tablet)
 		padding 25px 0 35px
@@ -69,11 +69,11 @@
 				padding-right 6px
 				text-align right
 				
-				.workStages__num
+				.work-stages__num
 					padding-left 0
 					padding-right 20px
 					
-				.workStages__divider
+				.work-stages__divider
 					margin-left auto
 			
 		&_even
@@ -85,23 +85,18 @@
 				width auto
 				
 			
-			.workStages__num
+			.work-stages__num
 				padding-left 0
 				padding-right 20px
 				
-			.workStages__divider
+			.work-stages__divider
 				margin-left auto
 				
 		+below($tablet)
 			display none
 			&.visible
 				display block
-				
-			&:nth-child(4n)
-				.workStages__text
-					padding-bottom 0
-				
-			
+
 	&__num
 		white-space nowrap
 		padding-left 30px
@@ -137,4 +132,17 @@
 		text-align center
 		
 		+below($tablet)
-			padding-top 75px
+			padding-top 0
+			
+	&__expand-outer
+		padding 30px 0
+		text-align center
+		cursor pointer
+		display none
+		
+		+below($tablet)
+			display block
+		
+	&__expand
+		width 34px
+		height 10px

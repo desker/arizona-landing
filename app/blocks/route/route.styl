@@ -1,0 +1,115 @@
+.route
+	display block
+	padding 75px 0 60px
+	height 840px
+	background linear-gradient(312.21deg, #FA7252 -28.32%, #F87353 47.94%, #F59623 103.98%)
+	position relative
+	
+	+below($tablet)
+		display none
+	
+	&__content
+		margin-top 65px
+		position relative
+		
+	&__layers
+		position absolute
+		width 434px
+		right 0
+
+	&__layer
+		opacity 1
+		transition ease .3s all
+		position absolute
+		
+		&_position
+			top 0
+			z-index 8
+			
+			&_1
+				top 65px
+				z-index 7
+			&_2
+				top 130px
+				z-index 6
+			&_3
+				top 195px
+				z-index 5
+			&_4
+				top 260px
+				z-index 4
+			&_5
+				top 325px
+				z-index 3
+				
+	
+	&__image
+		width 434px
+		
+	&__content
+		width 940px
+		margin 0 auto
+		color $c-white
+		
+	&__header
+		margin-top 200px
+		line-height 23px
+		font-size 24px
+		
+	&__text
+		margin-top 40px
+		width 295px
+		line-height 18px
+		font-size 13px
+		
+	&__icon
+		width 100px
+		position absolute
+		left 50%
+		width 100px
+		margin-left -50px
+		color $c-white
+		top 400px
+		text-align center
+		z-index 10
+		cursor pointer
+		
+		&:hover
+			color $text
+
+			& ~ .route__layers .route__layer
+				opacity .5
+
+		svg
+			width 23px
+			height 23px
+			display inline-block
+			pointer-events none
+			
+		&_1
+			&:hover ~ .route__layers .route__layer:nth-child(1)
+				opacity 1
+				
+			&:hover ~ .route__layers .route__layer:nth-child(3)
+				opacity 1
+		
+		&_2
+			top 472px
+			
+			&:hover ~ .route__layers .route__layer:nth-child(2)
+				opacity 1
+				
+			&:hover ~ .route__layers .route__layer:nth-child(4)
+				opacity 1
+			
+		&_3
+			top 544px
+			
+			&:hover ~ .route__layers .route__layer:nth-child(3)
+				opacity 1
+				
+			&:hover ~ .route__layers .route__layer:nth-child(5)
+				opacity 1
+			
+	&__icon-text
+		font-size 11px

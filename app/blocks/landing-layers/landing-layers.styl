@@ -13,7 +13,7 @@ iconTransformsOnChecked($num, $checked)
 			&[data-icon-checked=\"{$checked}\"]
 				transform translateX(-50% + 50% * ($num - $checked))
 
-.landingLayers
+.landing-layers
 	display block
 	background-color $c-light-gray
 	padding-top 75px
@@ -66,14 +66,14 @@ iconTransformsOnChecked($num, $checked)
 		display none
 		
 		&:checked 
-			& + .landingLayers__nav-item
+			& + .landing-layers__nav-item
 				border-bottom-color $c-orange
 				color $c-orange
 			
-			& ~ .landingLayers__nav-content
+			& ~ .landing-layers__nav-content
 				opacity 1
 				
-			& ~ .landingLayers__nav-icon
+			& ~ .landing-layers__nav-icon
 				bottom -20px
 		
 	&__nav-item

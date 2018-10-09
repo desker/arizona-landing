@@ -1,29 +1,31 @@
 include ../header/header
 include ../intro/intro
 include ../portfolio/portfolio
-include ../landingLayers/landingLayers
-include ../searchQueries/searchQueries
+include ../landing-layers/landing-layers
+include ../search-queries/search-queries
 include ../adaptive/adaptive
-include ../workStages/workStages
+include ../work-stages/work-stages
 include ../team/team
+include ../route/route
 include ../present/present
 include ../partners/partners
 include ../footer/footer
 include ../modal/modal
-include ../contactForm/contactForm
+include ../contact-form/contact-form
 
 mixin index()
 	+b.index&attributes(attributes)
 		+header(getData('header'))
 		+intro()
 		+portfolio(getData('portfolio'))
-		+landingLayers(getData('landingLayers'))
-		+searchQueries(getData('searchQueries'))
+		+landing-layers(getData('landingLayers'))
+		+search-queries(getData('searchQueries'))
 		+adaptive()
-		+workStages(getData('stages'))
+		+work-stages(getData('stages'))
 		+team(getData('team'))
+		+route()
 		+present()
 		+partners()
 		+footer()
 		+modal#contact-form
-			+contactForm
+			+contact-form

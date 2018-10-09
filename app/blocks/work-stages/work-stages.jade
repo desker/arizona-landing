@@ -1,11 +1,11 @@
 include ../button/button
 include ../title/title
 include ../subtitle/subtitle
+include ../icon/icon
 
-
-mixin workStages(stages)
+mixin work-stages(stages)
 	- var stages = stages || []
-	+b.workStages#about-us&attributes(attributes)
+	+b.work-stages#about-us&attributes(attributes)
 		+title._light Этапы работы
 		+subtitle._light Все продумано до мелочей
 		+e.scale
@@ -14,6 +14,9 @@ mixin workStages(stages)
 					+e.num(style=`color: ${stage.color};`)= `Шаг ${i + 1}`
 					+e.divider(style=`background-color: ${stage.color};`)
 					+e.text= stage.text
+
+		+e.expand-outer.js-work-expand
+			+icon('arrow_down').expand
 
 		+e.button
 			+button({ href: '#contact-form' }).js-show-modal Запросить портфолио

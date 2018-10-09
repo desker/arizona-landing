@@ -3,6 +3,9 @@ import 'slick-carousel';
 
 class SearchQueries {
 	init() {
+		$('.js-select-query').on('click', function () {
+			$(this).removeClass('flash');
+		});
 		$('.js-select-query').change(this.handleChange);
 	}
 

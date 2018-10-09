@@ -3,8 +3,8 @@ include ../title/title
 include ../subtitle/subtitle
 include ../input/input
 
-mixin contactForm()
-	+b.contactForm&attributes(attributes)
+mixin contact-form()
+	+b.contact-form&attributes(attributes)
 		+e('form').form.js-form(method='post' action='/')
 			+e.main
 				+title Оставьте свои контактные данные
